@@ -1,0 +1,14 @@
+{
+  "loadingStream": "Cargando Transmision",
+  "pleaseWait": "Por favor espere...",
+  "streamFailed": "No se pudo cargar la transmision",
+  "streamError": "Este canal no esta disponible actualmente o hay un problema temporal. Por favor, intente mas tarde.",
+  "retryButton": "Reintentar",
+  "live": "EN VIVO",
+  "unmute": "Activar sonido",
+  "mute": "Silenciar",
+  "restart": "Reiniciar",
+  "fullscreen": "Pantalla completa (F)",
+  "exitFullscreen": "Salir de pantalla completa",
+  "close": "Cerrar (ESC)"
+}

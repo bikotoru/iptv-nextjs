@@ -1,0 +1,10 @@
+{
+  "missingCredentials": "Le informazioni del servizio IPTV sono incomplete. URL base API, nome utente e password sono obbligatori.",
+  "missingXtreamConfig": "Le informazioni del servizio Xtream sono incomplete. Completa la configurazione IPTV o definisci le variabili d'ambiente XTREAM_USERNAME e XTREAM_PASSWORD.",
+  "apiRequestFailed": "Richiesta API Xtream fallita ({status})",
+  "unexpectedResponse": "L'API Xtream ha restituito una risposta inattesa.",
+  "connectionFailed": "Impossibile connettersi all'API Xtream: {message}",
+  "connectionFailedGeneric": "Impossibile connettersi all'API Xtream.",
+  "dataNotReached": "Impossibile ottenere i dati dall'API Xtream",
+  "unexpectedError": "Si e verificato un errore imprevisto"
+}

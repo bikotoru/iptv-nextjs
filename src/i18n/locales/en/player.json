@@ -1,0 +1,14 @@
+{
+  "loadingStream": "Loading Stream",
+  "pleaseWait": "Please wait...",
+  "streamFailed": "Stream Failed to Load",
+  "streamError": "This channel is currently unavailable or there's a temporary issue. Please try again later.",
+  "retryButton": "Retry",
+  "live": "LIVE",
+  "unmute": "Unmute",
+  "mute": "Mute",
+  "restart": "Restart",
+  "fullscreen": "Fullscreen (F)",
+  "exitFullscreen": "Exit fullscreen",
+  "close": "Close (ESC)"
+}

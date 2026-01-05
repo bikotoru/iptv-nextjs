@@ -1,0 +1,15 @@
+{
+  "title": "Canais",
+  "search": "Buscar canal...",
+  "channelsFound": "{count} canais encontrados",
+  "noChannelsFound": "Nenhum canal encontrado para a categoria selecionada.",
+  "live": "Ao vivo",
+  "showFavorites": "Mostrar apenas favoritos",
+  "showAll": "Mostrar todos os canais",
+  "addFavorite": "Adicionar aos favoritos",
+  "removeFavorite": "Remover dos favoritos",
+  "play": "Reproduzir canal",
+  "openInNewTab": "Abrir em nova aba",
+  "expandPanel": "Expandir painel",
+  "collapsePanel": "Recolher painel"
+}

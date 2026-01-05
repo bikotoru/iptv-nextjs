@@ -1,0 +1,9 @@
+{
+  "title": "Kategoriler",
+  "showFavorites": "Sadece favorileri goster",
+  "showAll": "Tum kategorileri goster",
+  "noFavorites": "Henuz favori kategori yok",
+  "notFound": "Kategori bulunamadi",
+  "expandMenu": "Menuyu genislet",
+  "collapseMenu": "Menuyu daralt"
+}

@@ -1,0 +1,10 @@
+{
+  "missingCredentials": "IPTV servis bilgileri eksik. API Base URL, kullanici adi ve sifre gereklidir.",
+  "missingXtreamConfig": "Xtream servis bilgileri eksik. Lutfen IPTV yapilandirmasini tamamlayin veya XTREAM_USERNAME ve XTREAM_PASSWORD environment degiskenlerini tanimlayin.",
+  "apiRequestFailed": "Xtream API istegi basarisiz oldu ({status})",
+  "unexpectedResponse": "Xtream API beklenmedik bir yanit dondurdu.",
+  "connectionFailed": "Xtream API cagrisinda baglanti kurulamadi: {message}",
+  "connectionFailedGeneric": "Xtream API cagrisinda baglanti kurulamadi.",
+  "dataNotReached": "Xtream API verilerine ulasilamadi",
+  "unexpectedError": "Beklenmedik bir hata olustu"
+}

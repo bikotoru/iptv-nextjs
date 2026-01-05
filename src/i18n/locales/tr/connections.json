@@ -1,0 +1,13 @@
+{
+  "title": "Baglantilar",
+  "noConnection": "Aktif baglanti yok",
+  "connectionsCount": "baglanti",
+  "addFirst": "Ilk baglantini ekle",
+  "addNew": "Yeni baglanti ekle",
+  "edit": "Baglantiyi duzenle",
+  "delete": "Baglantiyi sil",
+  "confirmDelete": "Silmeyi onayla",
+  "cancelDelete": "Iptal",
+  "typeXtream": "Xtream Codes",
+  "typeM3U8": "M3U8 Listesi"
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Channels",
+  "search": "Search channel...",
+  "channelsFound": "{count} channels found",
+  "noChannelsFound": "No channels found for the selected category.",
+  "live": "Live",
+  "showFavorites": "Show only favorites",
+  "showAll": "Show all channels",
+  "addFavorite": "Add to favorites",
+  "removeFavorite": "Remove from favorites",
+  "play": "Play channel",
+  "openInNewTab": "Open in new tab",
+  "expandPanel": "Expand panel",
+  "collapsePanel": "Collapse panel"
+}

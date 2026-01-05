@@ -1,0 +1,13 @@
+{
+  "loading": "IPTV verileri yukleniyor...",
+  "loadFailed": "IPTV Verileri Yuklenemedi",
+  "noCategories": "Kategori Bulunamadi",
+  "noCategoriesDesc": "IPTV servisinizde henuz kategori bulunmuyor veya erisim izniniz yok.",
+  "retry": "Tekrar Dene",
+  "refresh": "Yenile",
+  "apiRequestFailed": "API istegi basarisiz",
+  "errorLoadingCategories": "Kategoriler yuklenirken hata olustu",
+  "errorNoM3U8Source": "M3U8 kaynagi belirtilmedi",
+  "errorEmptyM3U8": "M3U8 listesi bos veya gecerli kanal icermiyor",
+  "defaultCategory": "Genel"
+}

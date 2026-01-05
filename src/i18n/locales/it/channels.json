@@ -1,0 +1,15 @@
+{
+  "title": "Canali",
+  "search": "Cerca canale...",
+  "channelsFound": "{count} canali trovati",
+  "noChannelsFound": "Nessun canale trovato per la categoria selezionata.",
+  "live": "In diretta",
+  "showFavorites": "Mostra solo preferiti",
+  "showAll": "Mostra tutti i canali",
+  "addFavorite": "Aggiungi ai preferiti",
+  "removeFavorite": "Rimuovi dai preferiti",
+  "play": "Riproduci canale",
+  "openInNewTab": "Apri in nuova scheda",
+  "expandPanel": "Espandi pannello",
+  "collapsePanel": "Comprimi pannello"
+}

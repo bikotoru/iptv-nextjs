@@ -1,0 +1,13 @@
+{
+  "loading": "Loading IPTV data...",
+  "loadFailed": "Failed to Load IPTV Data",
+  "noCategories": "No Categories Found",
+  "noCategoriesDesc": "Your IPTV service doesn't have any categories yet or you don't have access permission.",
+  "retry": "Retry",
+  "refresh": "Refresh",
+  "apiRequestFailed": "API request failed",
+  "errorLoadingCategories": "Error loading categories",
+  "errorNoM3U8Source": "No M3U8 source specified",
+  "errorEmptyM3U8": "The M3U8 playlist is empty or contains no valid channels",
+  "defaultCategory": "General"
+}
