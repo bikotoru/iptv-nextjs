@@ -1,0 +1,14 @@
+{
+  "loadingStream": "Carregando Transmissao",
+  "pleaseWait": "Por favor aguarde...",
+  "streamFailed": "Falha ao carregar a transmissao",
+  "streamError": "Este canal esta indisponivel no momento ou ha um problema temporario. Por favor, tente novamente mais tarde.",
+  "retryButton": "Tentar novamente",
+  "live": "AO VIVO",
+  "unmute": "Ativar som",
+  "mute": "Silenciar",
+  "restart": "Reiniciar",
+  "fullscreen": "Tela cheia (F)",
+  "exitFullscreen": "Sair da tela cheia",
+  "close": "Fechar (ESC)"
+}

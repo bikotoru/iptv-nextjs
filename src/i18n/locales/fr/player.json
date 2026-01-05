@@ -1,0 +1,14 @@
+{
+  "loadingStream": "Chargement du flux",
+  "pleaseWait": "Veuillez patienter...",
+  "streamFailed": "Echec du chargement du flux",
+  "streamError": "Cette chaine est actuellement indisponible ou il y a un probleme temporaire. Veuillez reessayer plus tard.",
+  "retryButton": "Reessayer",
+  "live": "EN DIRECT",
+  "unmute": "Activer le son",
+  "mute": "Couper le son",
+  "restart": "Redemarrer",
+  "fullscreen": "Plein ecran (F)",
+  "exitFullscreen": "Quitter le plein ecran",
+  "close": "Fermer (ESC)"
+}

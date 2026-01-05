@@ -1,0 +1,13 @@
+{
+  "loading": "Загрузка данных IPTV...",
+  "loadFailed": "Не удалось загрузить данные IPTV",
+  "noCategories": "Категории не найдены",
+  "noCategoriesDesc": "В вашем IPTV сервисе пока нет категорий или у вас нет прав доступа.",
+  "retry": "Повторить",
+  "refresh": "Обновить",
+  "apiRequestFailed": "Ошибка запроса API",
+  "errorLoadingCategories": "Ошибка при загрузке категорий",
+  "errorNoM3U8Source": "Источник M3U8 не указан",
+  "errorEmptyM3U8": "Плейлист M3U8 пуст или не содержит действительных каналов",
+  "defaultCategory": "Общее"
+}

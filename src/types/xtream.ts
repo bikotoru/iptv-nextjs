@@ -25,6 +25,7 @@ export interface ChannelStream {
   streamIcon: string | null;
   streamUrl: string;
   added?: string;
+  groupTitle?: string;
 }
 
 export interface ChannelCategory {
@@ -33,4 +34,46 @@ export interface ChannelCategory {
   order: number;
   parentId: string;
   streams: ChannelStream[];
+}
+
+// Connection types
+export type ConnectionType = "xtream" | "m3u8";
+
+export interface XtreamCredentials {
+  type: "xtream";
+  apiBase: string;
+  username: string;
+  password: string;
+  sessionCookie?: string;
+  userAgent?: string;
+  streamReferer?: string;
+}
+
+export interface M3U8Connection {
+  type: "m3u8";
+  url?: string;
+  content?: string;
+  userAgent?: string;
+  streamReferer?: string;
+}
+
+export type ConnectionCredentials = XtreamCredentials | M3U8Connection;
+
+export interface IPTVConnection {
+  id: string;
+  name: string;
+  credentials: ConnectionCredentials;
+  createdAt: number;
+  updatedAt: number;
+}
+
+// M3U8 Parser types
+export interface M3U8Entry {
+  url: string;
+  name: string;
+  logo?: string;
+  groupTitle?: string;
+  tvgId?: string;
+  tvgName?: string;
+  duration?: number;
 }

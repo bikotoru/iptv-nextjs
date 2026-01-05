@@ -1,0 +1,14 @@
+{
+  "loadingStream": "Caricamento stream",
+  "pleaseWait": "Attendere prego...",
+  "streamFailed": "Impossibile caricare lo stream",
+  "streamError": "Questo canale non e attualmente disponibile o c'e un problema temporaneo. Riprova piu tardi.",
+  "retryButton": "Riprova",
+  "live": "IN DIRETTA",
+  "unmute": "Attiva audio",
+  "mute": "Disattiva audio",
+  "restart": "Riavvia",
+  "fullscreen": "Schermo intero (F)",
+  "exitFullscreen": "Esci da schermo intero",
+  "close": "Chiudi (ESC)"
+}

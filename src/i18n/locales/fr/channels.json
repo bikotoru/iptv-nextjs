@@ -1,0 +1,15 @@
+{
+  "title": "Chaines",
+  "search": "Rechercher une chaine...",
+  "channelsFound": "{count} chaines trouvees",
+  "noChannelsFound": "Aucune chaine trouvee pour la categorie selectionnee.",
+  "live": "En direct",
+  "showFavorites": "Afficher uniquement les favoris",
+  "showAll": "Afficher toutes les chaines",
+  "addFavorite": "Ajouter aux favoris",
+  "removeFavorite": "Retirer des favoris",
+  "play": "Lire la chaine",
+  "openInNewTab": "Ouvrir dans un nouvel onglet",
+  "expandPanel": "Agrandir le panneau",
+  "collapsePanel": "Reduire le panneau"
+}

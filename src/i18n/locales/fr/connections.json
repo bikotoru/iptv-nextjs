@@ -1,0 +1,13 @@
+{
+  "title": "Connexions",
+  "noConnection": "Aucune connexion active",
+  "connectionsCount": "connexions",
+  "addFirst": "Ajouter la premiere connexion",
+  "addNew": "Ajouter une nouvelle connexion",
+  "edit": "Modifier la connexion",
+  "delete": "Supprimer la connexion",
+  "confirmDelete": "Confirmer la suppression",
+  "cancelDelete": "Annuler",
+  "typeXtream": "Xtream Codes",
+  "typeM3U8": "Liste M3U8"
+}

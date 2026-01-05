@@ -1,0 +1,15 @@
+{
+  "title": "Kanallar",
+  "search": "Kanal ara...",
+  "channelsFound": "{count} kanal bulundu",
+  "noChannelsFound": "Secili kategori icin kanal bulunamadi.",
+  "live": "Canli",
+  "showFavorites": "Sadece favorileri goster",
+  "showAll": "Tum kanallari goster",
+  "addFavorite": "Favorilere ekle",
+  "removeFavorite": "Favorilerden cikar",
+  "play": "Kanali oynat",
+  "openInNewTab": "Yeni sekmede ac",
+  "expandPanel": "Panel genislet",
+  "collapsePanel": "Panel daralt"
+}

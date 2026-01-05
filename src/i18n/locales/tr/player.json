@@ -1,0 +1,14 @@
+{
+  "loadingStream": "Yayin Yukleniyor",
+  "pleaseWait": "Lutfen bekleyin...",
+  "streamFailed": "Yayin Yuklenemedi",
+  "streamError": "Bu kanal su anda erisilebilir degil veya gecici bir sorun var. Lutfen daha sonra tekrar deneyin.",
+  "retryButton": "Tekrar Dene",
+  "live": "CANLI",
+  "unmute": "Sesi ac",
+  "mute": "Sesi kapat",
+  "restart": "Yeniden baslat",
+  "fullscreen": "Tam ekran (F)",
+  "exitFullscreen": "Tam ekrandan cik",
+  "close": "Kapat (ESC)"
+}

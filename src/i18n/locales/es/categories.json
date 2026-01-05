@@ -1,0 +1,9 @@
+{
+  "title": "Categorias",
+  "showFavorites": "Mostrar solo favoritos",
+  "showAll": "Mostrar todas las categorias",
+  "noFavorites": "Aun no hay categorias favoritas",
+  "notFound": "Categoria no encontrada",
+  "expandMenu": "Expandir menu",
+  "collapseMenu": "Contraer menu"
+}

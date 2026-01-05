@@ -1,0 +1,13 @@
+{
+  "loading": "Chargement des donnees IPTV...",
+  "loadFailed": "Echec du chargement des donnees IPTV",
+  "noCategories": "Aucune categorie trouvee",
+  "noCategoriesDesc": "Votre service IPTV n'a pas encore de categories ou vous n'avez pas la permission d'acces.",
+  "retry": "Reessayer",
+  "refresh": "Actualiser",
+  "apiRequestFailed": "Echec de la requete API",
+  "errorLoadingCategories": "Erreur lors du chargement des categories",
+  "errorNoM3U8Source": "Aucune source M3U8 specifiee",
+  "errorEmptyM3U8": "La liste M3U8 est vide ou ne contient pas de chaines valides",
+  "defaultCategory": "General"
+}
