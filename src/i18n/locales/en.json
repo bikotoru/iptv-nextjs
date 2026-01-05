@@ -1,0 +1,103 @@
+{
+  "login": {
+    "title": "React IPTV Client",
+    "description": "Configure your IPTV service information",
+    "apiBaseLabel": "API Base URL *",
+    "apiBasePlaceholder": "http://server.com:8080/player_api.php",
+    "apiBaseHint": "Xtream Codes API endpoint URL",
+    "usernameLabel": "Username *",
+    "usernamePlaceholder": "Your IPTV username",
+    "passwordLabel": "Password *",
+    "passwordPlaceholder": "Your IPTV password",
+    "sessionCookieLabel": "Session Cookie (Optional)",
+    "sessionCookiePlaceholder": "Browser session cookie",
+    "sessionCookieHint": "Session cookie obtained from browser if there's access restriction",
+    "userAgentLabel": "User Agent (Optional)",
+    "userAgentPlaceholder": "Custom User-Agent string",
+    "userAgentHint": "Custom User-Agent string (default will be used if left empty)",
+    "streamRefererLabel": "Stream Referer (Optional)",
+    "streamRefererPlaceholder": "Stream referer URL",
+    "streamRefererHint": "Referer URL for stream requests",
+    "securityNote": "Your information is securely stored in your browser",
+    "configureButton": "Configure IPTV",
+    "configuringButton": "Configuring...",
+    "errors": {
+      "missingFields": "API Base URL, username and password are required",
+      "invalidUrl": "Please enter a valid API Base URL",
+      "configError": "An error occurred while saving the configuration"
+    }
+  },
+  "player": {
+    "loadingStream": "Loading Stream",
+    "pleaseWait": "Please wait...",
+    "streamFailed": "Stream Failed to Load",
+    "streamError": "This channel is currently unavailable or there's a temporary issue. Please try again later.",
+    "retryButton": "Retry",
+    "live": "LIVE",
+    "unmute": "Unmute",
+    "mute": "Mute",
+    "restart": "Restart",
+    "fullscreen": "Fullscreen (F)",
+    "exitFullscreen": "Exit fullscreen",
+    "close": "Close (ESC)"
+  },
+  "browser": {
+    "loading": "Loading IPTV data...",
+    "loadFailed": "Failed to Load IPTV Data",
+    "noCategories": "No Categories Found",
+    "noCategoriesDesc": "Your IPTV service doesn't have any categories yet or you don't have access permission.",
+    "retry": "Retry",
+    "refresh": "Refresh",
+    "apiRequestFailed": "API request failed",
+    "errorLoadingCategories": "Error loading categories"
+  },
+  "channels": {
+    "title": "Channels",
+    "search": "Search channel...",
+    "channelsFound": "{count} channels found",
+    "noChannelsFound": "No channels found for the selected category.",
+    "live": "Live",
+    "showFavorites": "Show only favorites",
+    "showAll": "Show all channels",
+    "addFavorite": "Add to favorites",
+    "removeFavorite": "Remove from favorites",
+    "play": "Play channel",
+    "openInNewTab": "Open in new tab",
+    "expandPanel": "Expand panel",
+    "collapsePanel": "Collapse panel"
+  },
+  "categories": {
+    "title": "Categories",
+    "showFavorites": "Show only favorites",
+    "showAll": "Show all categories",
+    "noFavorites": "No favorite categories yet",
+    "notFound": "Category not found",
+    "expandMenu": "Expand menu",
+    "collapseMenu": "Collapse menu"
+  },
+  "settings": {
+    "loading": "Loading...",
+    "changeSettings": "Change IPTV settings",
+    "settingsButton": "Settings",
+    "clearButton": "Clear",
+    "clearConfig": "Clear IPTV configuration"
+  },
+  "errors": {
+    "missingCredentials": "IPTV service information is incomplete. API Base URL, username and password are required.",
+    "missingXtreamConfig": "Xtream service information is incomplete. Please complete the IPTV configuration or define XTREAM_USERNAME and XTREAM_PASSWORD environment variables.",
+    "apiRequestFailed": "Xtream API request failed ({status})",
+    "unexpectedResponse": "Xtream API returned an unexpected response.",
+    "connectionFailed": "Could not connect to Xtream API: {message}",
+    "connectionFailedGeneric": "Could not connect to Xtream API.",
+    "dataNotReached": "Could not reach Xtream API data",
+    "unexpectedError": "An unexpected error occurred"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "login": {
+    "title": "Cliente React IPTV",
+    "description": "Configure as informacoes do seu servico IPTV",
+    "apiBaseLabel": "URL Base da API *",
+    "apiBasePlaceholder": "http://servidor.com:8080/player_api.php",
+    "apiBaseHint": "URL do endpoint da API Xtream Codes",
+    "usernameLabel": "Nome de Usuario *",
+    "usernamePlaceholder": "Seu nome de usuario IPTV",
+    "passwordLabel": "Senha *",
+    "passwordPlaceholder": "Sua senha IPTV",
+    "sessionCookieLabel": "Cookie de Sessao (Opcional)",
+    "sessionCookiePlaceholder": "Cookie de sessao do navegador",
+    "sessionCookieHint": "Cookie de sessao obtido do navegador se houver restricao de acesso",
+    "userAgentLabel": "User Agent (Opcional)",
+    "userAgentPlaceholder": "String User-Agent personalizada",
+    "userAgentHint": "String User-Agent personalizada (padrao sera usado se vazio)",
+    "streamRefererLabel": "Referer de Stream (Opcional)",
+    "streamRefererPlaceholder": "URL de referer para streams",
+    "streamRefererHint": "URL de referer para solicitacoes de stream",
+    "securityNote": "Suas informacoes sao armazenadas com seguranca no seu navegador",
+    "configureButton": "Configurar IPTV",
+    "configuringButton": "Configurando...",
+    "errors": {
+      "missingFields": "URL base da API, nome de usuario e senha sao obrigatorios",
+      "invalidUrl": "Insira uma URL base da API valida",
+      "configError": "Erro ao salvar a configuracao"
+    }
+  },
+  "player": {
+    "loadingStream": "Carregando Transmissao",
+    "pleaseWait": "Por favor aguarde...",
+    "streamFailed": "Falha ao carregar a transmissao",
+    "streamError": "Este canal esta indisponivel no momento ou ha um problema temporario. Por favor, tente novamente mais tarde.",
+    "retryButton": "Tentar novamente",
+    "live": "AO VIVO",
+    "unmute": "Ativar som",
+    "mute": "Silenciar",
+    "restart": "Reiniciar",
+    "fullscreen": "Tela cheia (F)",
+    "exitFullscreen": "Sair da tela cheia",
+    "close": "Fechar (ESC)"
+  },
+  "browser": {
+    "loading": "Carregando dados IPTV...",
+    "loadFailed": "Falha ao carregar dados IPTV",
+    "noCategories": "Nenhuma categoria encontrada",
+    "noCategoriesDesc": "Seu servico IPTV ainda nao tem categorias ou voce nao tem permissao de acesso.",
+    "retry": "Tentar novamente",
+    "refresh": "Atualizar",
+    "apiRequestFailed": "Falha na solicitacao da API",
+    "errorLoadingCategories": "Erro ao carregar categorias"
+  },
+  "channels": {
+    "title": "Canais",
+    "search": "Buscar canal...",
+    "channelsFound": "{count} canais encontrados",
+    "noChannelsFound": "Nenhum canal encontrado para a categoria selecionada.",
+    "live": "Ao vivo",
+    "showFavorites": "Mostrar apenas favoritos",
+    "showAll": "Mostrar todos os canais",
+    "addFavorite": "Adicionar aos favoritos",
+    "removeFavorite": "Remover dos favoritos",
+    "play": "Reproduzir canal",
+    "openInNewTab": "Abrir em nova aba",
+    "expandPanel": "Expandir painel",
+    "collapsePanel": "Recolher painel"
+  },
+  "categories": {
+    "title": "Categorias",
+    "showFavorites": "Mostrar apenas favoritos",
+    "showAll": "Mostrar todas as categorias",
+    "noFavorites": "Ainda nao ha categorias favoritas",
+    "notFound": "Categoria nao encontrada",
+    "expandMenu": "Expandir menu",
+    "collapseMenu": "Recolher menu"
+  },
+  "settings": {
+    "loading": "Carregando...",
+    "changeSettings": "Alterar configuracoes IPTV",
+    "settingsButton": "Configuracoes",
+    "clearButton": "Limpar",
+    "clearConfig": "Limpar configuracao IPTV"
+  },
+  "errors": {
+    "missingCredentials": "Informacoes do servico IPTV incompletas. URL base da API, nome de usuario e senha sao obrigatorios.",
+    "missingXtreamConfig": "Informacoes do servico Xtream incompletas. Por favor, complete a configuracao IPTV ou defina as variaveis de ambiente XTREAM_USERNAME e XTREAM_PASSWORD.",
+    "apiRequestFailed": "Falha na solicitacao da API Xtream ({status})",
+    "unexpectedResponse": "A API Xtream retornou uma resposta inesperada.",
+    "connectionFailed": "Nao foi possivel conectar a API Xtream: {message}",
+    "connectionFailedGeneric": "Nao foi possivel conectar a API Xtream.",
+    "dataNotReached": "Nao foi possivel obter dados da API Xtream",
+    "unexpectedError": "Ocorreu um erro inesperado"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "close": "Fechar"
+  }
+}
