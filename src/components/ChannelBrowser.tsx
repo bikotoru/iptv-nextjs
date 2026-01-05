@@ -8,6 +8,7 @@ import { ChannelListPanel } from "./ChannelListPanel";
 import { MobileControls } from "./MobileControls";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslations } from "next-intl";
+import { parseM3U8Content, m3u8ToCategories, fetchAndParseM3U8 } from "@/lib/m3u8-parser";
 import type { ChannelCategory, ChannelStream } from "@/types/xtream";
 
 const CACHE_KEY = "react-iptv-categories-cache";
@@ -20,7 +21,7 @@ interface CacheData {
 }
 
 export function ChannelBrowser() {
-  const { credentials } = useAuth();
+  const { credentials, activeConnection } = useAuth();
   const t = useTranslations("browser");
   const [categories, setCategories] = useState<ChannelCategory[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -48,26 +49,79 @@ export function ChannelBrowser() {
   const [isMenuCollapsed, setIsMenuCollapsed] = useState(false);
   const [isChannelPanelCollapsed, setIsChannelPanelCollapsed] = useState(false);
 
-  const credentialsHash = useMemo(() => {
-    if (!credentials) return "";
-    return btoa(JSON.stringify(credentials)).slice(0, 16);
-  }, [credentials]);
+  const connectionHash = useMemo(() => {
+    if (!activeConnection) return "";
+    return btoa(JSON.stringify(activeConnection.credentials)).slice(0, 16);
+  }, [activeConnection]);
+
+  // Load categories for M3U8 connection
+  const loadM3U8Categories = useCallback(async () => {
+    if (!activeConnection || activeConnection.credentials.type !== "m3u8") {
+      return null;
+    }
+
+    const creds = activeConnection.credentials;
+
+    try {
+      let entries;
+
+      if (creds.content) {
+        // Parse from stored content
+        entries = parseM3U8Content(creds.content);
+      } else if (creds.url) {
+        // Fetch and parse from URL
+        entries = await fetchAndParseM3U8(creds.url, {
+          userAgent: creds.userAgent,
+          referer: creds.streamReferer,
+        });
+      } else {
+        throw new Error(t("errorNoM3U8Source"));
+      }
+
+      if (entries.length === 0) {
+        throw new Error(t("errorEmptyM3U8"));
+      }
+
+      return m3u8ToCategories(entries, t("defaultCategory"));
+    } catch (err) {
+      throw err;
+    }
+  }, [activeConnection, t]);
+
+  // Load categories for Xtream connection
+  const loadXtreamCategories = useCallback(async () => {
+    if (!credentials) return null;
+
+    const response = await fetch(
+      `/api/xtream?credentials=${encodeURIComponent(
+        JSON.stringify(credentials)
+      )}`
+    );
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.message || t("apiRequestFailed"));
+    }
+
+    const data = await response.json();
+    return data.categories || [];
+  }, [credentials, t]);
 
   const loadCategories = useCallback(
     async (forceRefresh = false) => {
-      if (!credentials) return;
+      if (!activeConnection) return;
 
       setIsLoading(true);
       setError(null);
 
       try {
+        // Check cache first (unless force refresh)
         if (!forceRefresh) {
           const cached = localStorage.getItem(CACHE_KEY);
           if (cached) {
             const cacheData: CacheData = JSON.parse(cached);
             const isExpired = Date.now() - cacheData.timestamp > CACHE_DURATION;
-            const isSameCredentials =
-              cacheData.credentialsHash === credentialsHash;
+            const isSameCredentials = cacheData.credentialsHash === connectionHash;
 
             if (
               !isExpired &&
@@ -84,24 +138,24 @@ export function ChannelBrowser() {
           }
         }
 
-        const response = await fetch(
-          `/api/xtream?credentials=${encodeURIComponent(
-            JSON.stringify(credentials)
-          )}`
-        );
+        // Load based on connection type
+        let newCategories: ChannelCategory[] | null = null;
 
-        if (!response.ok) {
-          const errorData = await response.json();
-          throw new Error(errorData.message || t("apiRequestFailed"));
+        if (activeConnection.credentials.type === "m3u8") {
+          newCategories = await loadM3U8Categories();
+        } else {
+          newCategories = await loadXtreamCategories();
         }
 
-        const data = await response.json();
-        const newCategories = data.categories || [];
+        if (!newCategories) {
+          throw new Error(t("errorLoadingCategories"));
+        }
 
+        // Cache the results
         const cacheData: CacheData = {
           categories: newCategories,
           timestamp: Date.now(),
-          credentialsHash,
+          credentialsHash: connectionHash,
         };
         localStorage.setItem(CACHE_KEY, JSON.stringify(cacheData));
         setCategories(newCategories);
@@ -119,7 +173,7 @@ export function ChannelBrowser() {
         setIsLoading(false);
       }
     },
-    [credentials, selectedCategoryId, credentialsHash, t]
+    [activeConnection, selectedCategoryId, connectionHash, loadM3U8Categories, loadXtreamCategories, t]
   );
 
   useEffect(() => {
@@ -127,10 +181,10 @@ export function ChannelBrowser() {
   }, [loadCategories]);
 
   useEffect(() => {
-    if (credentials) {
+    if (activeConnection) {
       localStorage.removeItem(CACHE_KEY);
     }
-  }, [credentials]);
+  }, [activeConnection]);
 
   const toggleSidebar = useCallback(() => {
     setIsSidebarOpen((prev) => {

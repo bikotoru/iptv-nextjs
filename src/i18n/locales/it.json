@@ -2,6 +2,26 @@
   "login": {
     "title": "Client React IPTV",
     "description": "Configura le informazioni del tuo servizio IPTV",
+    "addConnection": "Aggiungi nuova connessione",
+    "connectionNameLabel": "Nome connessione *",
+    "connectionNamePlaceholder": "Il mio IPTV, Casa, Lavoro...",
+    "xtreamTitle": "Xtream Codes",
+    "xtreamDesc": "Connetti al server Xtream Codes API",
+    "editXtream": "Modifica connessione Xtream",
+    "m3u8Title": "Lista M3U/M3U8",
+    "m3u8Desc": "Carica lista canali M3U/M3U8",
+    "editM3U8": "Modifica lista M3U8",
+    "m3u8SourceLabel": "Fonte della lista",
+    "m3u8FromUrl": "Da URL",
+    "m3u8FromFile": "Da file",
+    "m3u8UrlLabel": "URL lista M3U8 *",
+    "m3u8UrlPlaceholder": "https://esempio.com/lista.m3u8",
+    "m3u8UrlHint": "URL diretto al file M3U o M3U8",
+    "m3u8FileLabel": "File M3U/M3U8",
+    "m3u8FileSelect": "Seleziona file...",
+    "m3u8FileLoaded": "File caricato",
+    "m3u8FileReady": "File pronto ({lines} righe)",
+    "m3u8FileHint": "Seleziona un file .m3u o .m3u8 dal tuo dispositivo",
     "apiBaseLabel": "URL Base API *",
     "apiBasePlaceholder": "http://server.com:8080/player_api.php",
     "apiBaseHint": "URL dell'endpoint API Xtream Codes",
@@ -23,9 +43,28 @@
     "configuringButton": "Configurazione...",
     "errors": {
       "missingFields": "URL base API, nome utente e password sono obbligatori",
+      "missingName": "Il nome della connessione e obbligatorio",
       "invalidUrl": "Inserisci un URL base API valido",
-      "configError": "Errore durante il salvataggio della configurazione"
+      "configError": "Errore durante il salvataggio della configurazione",
+      "missingM3U8Url": "L'URL della lista M3U8 e obbligatorio",
+      "missingM3U8File": "Seleziona un file M3U8",
+      "invalidM3U8Url": "Inserisci un URL lista M3U8 valido",
+      "invalidM3U8File": "Il file non e una lista M3U/M3U8 valida",
+      "fileReadError": "Errore nella lettura del file"
     }
+  },
+  "connections": {
+    "title": "Connessioni",
+    "noConnection": "Nessuna connessione attiva",
+    "connectionsCount": "connessioni",
+    "addFirst": "Aggiungi prima connessione",
+    "addNew": "Aggiungi nuova connessione",
+    "edit": "Modifica connessione",
+    "delete": "Elimina connessione",
+    "confirmDelete": "Conferma eliminazione",
+    "cancelDelete": "Annulla",
+    "typeXtream": "Xtream Codes",
+    "typeM3U8": "Lista M3U8"
   },
   "player": {
     "loadingStream": "Caricamento stream",
@@ -49,7 +88,10 @@
     "retry": "Riprova",
     "refresh": "Aggiorna",
     "apiRequestFailed": "Richiesta API fallita",
-    "errorLoadingCategories": "Errore durante il caricamento delle categorie"
+    "errorLoadingCategories": "Errore durante il caricamento delle categorie",
+    "errorNoM3U8Source": "Nessuna fonte M3U8 specificata",
+    "errorEmptyM3U8": "La lista M3U8 e vuota o non contiene canali validi",
+    "defaultCategory": "Generale"
   },
   "channels": {
     "title": "Canali",
@@ -98,6 +140,7 @@
     "success": "Successo",
     "cancel": "Annulla",
     "save": "Salva",
-    "close": "Chiudi"
+    "close": "Chiudi",
+    "back": "Indietro"
   }
 }
